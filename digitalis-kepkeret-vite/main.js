@@ -14,8 +14,8 @@ function init(){
 
 function Border(){
     imgUrl = document.getElementById("url")
-    thickness = document.getElementById("thickness")
-    lenght = document.getElementById("lenght")
+    thickness = document.getElementById("thickness").value
+    lenght = document.getElementById("lenght").value
     color = document.getElementById("color")
     if(imgUrl == ""){
         //hiba 1
@@ -34,11 +34,11 @@ function Border(){
     else{
         //if everything correct
         //document.getElementById("finalimg").innerHTML = imgUrl
-        document.getElementById("finalimg").innerHTML.style = "border: " + thickness + "px" 
-        document.getElementById("finalimg").innerHTML.style = "lenght:" + lenght + "px"
+        document.getElementById("finalimg").innerHTML.style = 'border: ' + thickness + 'px' + color 
+        document.getElementById("finalimg").innerHTML.style = 'lenght: ' + lenght + 'px'
     }
 }
 
 function ModeSwitch(){
-    
+    //color mode
 }
