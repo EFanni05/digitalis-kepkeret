@@ -9,6 +9,7 @@ let color
 document.addEventListener("DOMContentLoaded", init)
 function init(){
     document.getElementById("borderButton").addEventListener("click", Border)
+    document.getElementById("mode").addEventListener("click", ModeSwitch)
 }
 
 function Border(){
@@ -36,4 +37,8 @@ function Border(){
         document.getElementById("finalimg").innerHTML.style = "border: " + thickness + "px" 
         document.getElementById("finalimg").innerHTML.style = "lenght:" + lenght + "px"
     }
+}
+
+function ModeSwitch(){
+    
 }
