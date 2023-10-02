@@ -4,21 +4,21 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>digitalis kepkeret</title>
+    <title>Digitalis Kepkeret</title>
   </head>
   <body data-bs-theme="dark">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center m-5 mb-3">
         <label for="url">A kép URL-je:<input type="url" name="url" id="url" class="col-md-3 col-12 form-control"></label>
         <label for="lenght">A kép szélessége: <input type="number" name="lenght" id="lenght" min="1" class="col-md-3 col-12 form-control"></label>
         <label for="thickness">Keret vastagsága: <input type="number" name="thickness" id="thickness" min="1" class="col-md-3 col-12 form-control"><label>
-        <label for="">A keret színe<input type="color" name="color" id="color" class="col-md-3 col-12 form-control"></label><br>
-        <button id="borderButton" type="button" class="col-md-3 col-12 btn btn-info">Mehet</button>
+        <label for="color">A keret színe<input type="color" name="color" id="color" class="col-md-3 col-12 form-control"></label><br>
+        <button id="borderButton" type="button" class="btn btn-info m-2">Mehet</button>
       </div>
       <div class="row">
-        <img src="./public/BDreport_Suwa2021_2.jpg" alt="your image" id="finalimg">
+        <img src="./public/cat.jpeg" alt="your image" id="finalimg">
       </div>
-      <footer class="col-12">
+      <footer class="col-12 m-5">
         <p>Elekes Fanni 14.S</p>
         <button type="button" id="mode" class="btn">mode switch</button>
       </footer>
