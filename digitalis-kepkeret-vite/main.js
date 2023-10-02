@@ -4,16 +4,19 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 let imgUrl
 let thickness
 let lenght
+let color
 
 document.addEventListener("DOMContentLoaded", init)
 function init(){
     document.getElementById("borderButton").addEventListener("click", Border)
+    document.getElementById("mode").addEventListener("click", ModeSwitch)
 }
 
 function Border(){
     imgUrl = document.getElementById("url")
-    thickness = document.getElementById("thickness").value
-    lenght = document.getElementById("lenght").value
+    thickness = document.getElementById("thickness")
+    lenght = document.getElementById("lenght")
+    color = document.getElementById("color")
     if(imgUrl == ""){
         //hiba 1
         console.log("url hiba")
@@ -30,8 +33,12 @@ function Border(){
     }
     else{
         //if everything correct
-        // document.getElementById("finalimg").innerHTML = imgUrl
-        document.getElementById("finalimg").innerHTML.style = "border: " + thickness + "px"
+        //document.getElementById("finalimg").innerHTML = imgUrl
+        document.getElementById("finalimg").innerHTML.style = "border: " + thickness + "px" 
         document.getElementById("finalimg").innerHTML.style = "lenght:" + lenght + "px"
     }
+}
+
+function ModeSwitch(){
+    
 }
