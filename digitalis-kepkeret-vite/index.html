@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>digitalis kepkeret</title>
   </head>
-  <body>
+  <body data-bs-theme="light">
     <div class="container">
       <div class="row align-items-start">
-        <label for="url">A kép URL-je:<input type="url" name="url" id="url" class="col-md-3 col-12"></label>
-        <label for="lenght">A kép szélessége: <input type="number" name="lenght" id="lenght" min="1" class="col-md-3 col-12"></label>
-        <label for="thickness">Keret vastagsága: <input type="number" name="thickness" id="thickness" min="1" class="col-md-3 col-12"><label>
+        <label for="url">A kép URL-je:<input type="url" name="url" id="url" class="col-md-3 col-12 form-control"></label>
+        <label for="lenght">A kép szélessége: <input type="number" name="lenght" id="lenght" min="1" class="col-md-3 col-12 form-control"></label>
+        <label for="thickness">Keret vastagsága: <input type="number" name="thickness" id="thickness" min="1" class="col-md-3 col-12 form-control"><label>
+        <input type="color" name="color" id="color">
         <button id="borderButton" type="button" class="col-md-3 col-12 btn btn-info">Mehet</button>
       </div>
       <div class="row">
@@ -19,6 +20,7 @@
       </div>
       <footer class="col-12">
         <p>Elekes Fanni 14.S</p>
+        <button type="button" id="btn">mode switch</button>
       </footer>
     </div>
     <script type="module" src="/main.js"></script>
