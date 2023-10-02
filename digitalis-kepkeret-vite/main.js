@@ -23,4 +23,10 @@ function Border(){
     else if(lenght <= 0){
         //hiba 3
     }
+    else{
+        //if everything correct
+        document.getElementById("finalimg").innerHTML = imgUrl
+        document.getElementById("finalimg").innerHTML.style = "border: " + thickness + "px"
+        document.getElementById("finalimg").innerHTML.style = "lenght:" + lenght + "px"
+    }
 }
